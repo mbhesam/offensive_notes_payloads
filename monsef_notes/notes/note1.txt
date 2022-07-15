@@ -1,0 +1,81 @@
+Centos 7 Command 
+yum update -y
+yum install net-tools -y
+yum install wget -y
+yum install nc -y
+yum install whois -y 
+timedatectl set-timezone Asia/Tehran
+hostnamectl set-hostname lab.esecurity.ir
+yum install yum-utils -y
+yum-complete-transaction --cleanup-only
+yum install nano -y
+yum install epel-release -y 
+sestatus 
+sed -i 's/enforcing/disabled/g' /etc/selinux/config /etc/selinux/config
+reboot
+sestatus
+yum install httpd -y
+systemctl start httpd.service
+systemctl enable httpd.service
+/var/www/html/
+firewall-cmd --permanent --zone=public --add-service=http
+firewall-cmd --reload
+firewall-cmd --state
+firewall-cmd --permanent --zone=public --add-port=80/tcp
+firewall-cmd --list-ports
+firewall-cmd --list-service
+yum install firewalld  -y
+systemctl restart firewalld.service
+systemctl stop firewalld.service
+systemctl start firewalld.service
+systemctl enable firewalld.service
+yum -y install php
+systemctl restart httpd.service
+yum -y install php-mysql
+php -m | grep mysql
+yum -y install php-gd php-ldap php-odbc php-pear php-xml php-xmlrpc php-mbstring php-snmp php-soap curl curl-devel
+yum install php-mcrypt -y
+systemctl restart httpd.service
+yum install zip unzip -y
+yum install tcl-devel tk-devel expect-devel expectk -y
+yum install g++ gcc -y
+yum install expect expect-devel tcl tcl-devel php php-devel php-pecl-memcache php-pear -y
+pecl install channel://pecl.php.net/expect-0.3.1
+nano /etc/php.ini
+extension=expect.so  #to add /etc/php.ini
+systemctl restart httpd.service
+yum -y install mariadb-server mariadb
+systemctl start mariadb.service
+systemctl enable mariadb.service
+mysql_secure_installation
+yum install phpMyAdmin -y
+nano /etc/httpd/conf.d/phpMyAdmin.conf
+<Directory /usr/share/phpMyAdmin/>
+        Options none
+        AllowOverride Limit
+        Require all granted
+</Directory>
+nano /etc/phpMyAdmin/config.inc.php
+systemctl restart httpd.service
+
+https://repo.mongodb.org/yum/redhat/7/mongodb-org/3.6/x86_64/RPMS/
+rpm -i mongodb-org-mongos-3.6.4-1.el7.x86_64.rpm
+rpm -i mongodb-org-server-3.6.4-1.el7.x86_64.rpm
+rpm -i mongodb-org-shell-3.6.4-1.el7.x86_64.rpm
+rpm -i mongodb-org-tools-3.6.4-1.el7.x86_64.rpm
+rpm -i mongodb-org-3.6.4-1.el7.x86_64.rpm
+systemctl start mongod.service
+systemctl enable mongod.service
+systemctl status mongod
+mongod --version
+netstat -antup | grep -i 27017
+firewall-cmd --zone=public --add-port=27017/tcp --permanent
+firewall-cmd --reload
+yum -y install gcc php-pear php-devel
+yum install -y openssl-devel
+pecl install mongo
+nano /etc/php.ini
+extension=mongo.so  #to add /etc/php.ini
+systemctl restart httpd.service
+php -m | grep -i mongo
+shutdown now

